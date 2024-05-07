@@ -11,12 +11,18 @@
     <link rel="stylesheet" href="styles.css">
 
     <!-- --------- FAVICON ---------- -->
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <!-- -------------------- cloudflare ------------------  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
 
     <title>Portfolio | Arsalan </title>
 
 
 </head>
+
 <body>
    <div class="container">
     <!-- --------------- HEADER --------------- -->
@@ -40,13 +46,21 @@
                     <div class="circle"></div>
                 </li>
                 <li class="nav_list">
+                    <a href="https://muhammad-arsalan-wazir.github.io/Previous-work/" class="nav-link">Work</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#Services" class="nav-link">Services</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
                     <a href="#contact" class="nav-link">Contact</a>
                     <div class="circle"></div>
                 </li>
             </ul>
         </div>
         <div class="nav-button">
-            <a href="myResume.html"><button class="btn"> Resume  <i class="uil uil-file-alt"></i></button></a>
+            <a href="myResume.pdf"><button class="btn"> Resume  <i class="uil uil-file-alt"></i></button></a>
         </div>
         <div class="nav-menu-btn">
             <i class="uil uil-bars" onclick="myMenuFunction()"></i>
@@ -72,10 +86,10 @@
             </div>
             <div class="featured-text-btn">
                 <button class="btn blue-btn">Hire Me</button>
-                <a href="myResume.html"><button class="btn">Download CV <i class="uil uil-file-alt"></i></button></a>
+                <a href="myResume.pdf"><button class="btn">Download CV <i class="uil uil-file-alt"></i></button></a>
             </div>
             <div class="social_icons">
-                <div class="icon"><i class="uil uil-instagram"></i></div>
+                <a href="https://www.instagram.com/muhammadarsalanwazir88/"><div class="icon"><i class="uil uil-instagram"></i></div></a> 
                 <a href="https://www.linkedin.com/in/muhammad-arsalan-61b862281/"><div class="icon"><i class="uil uil-linkedin-alt"></i></div></a>
                 <div class="icon"><i class="uil uil-dribbble"></i></div>
                 <a href="https://github.com/"><div class="icon"><i class="uil uil-github-alt"></i></div></a>
@@ -103,13 +117,13 @@
             <div class="col">
                 <div class="about-info">
                     <h3>My introduction</h3>
-                    <p>I am well-versed in HTML, CSS, Bootstrap and JavaScript , and other cutting edge
+                    <p>I am well-versed in HTML, CSS, Bootstrape and JavaScript , and other cutting edge
                        frameworks and libraries,which allows me to implement interactive features.
                        Additionally, I have experirence working with content management systems (CMS) like
                        WordPress.
                     </p>
                     <div class="about-btn">
-                       <a href="myResume.html"> <button class="btn">Download CV <i class="uil uil-import"></i></button></a>
+                       <a href="myResume.pdf"> <button class="btn">Download CV <i class="uil uil-import"></i></button></a>
                     </div>
                 </div>
             </div>
@@ -153,7 +167,7 @@
               <h1>Projects</h1>
           </div>
           <div class="project-container">
-            <div class="project-box">
+           <div class="project-box ">
                 <i class="uil uil-briefcase-alt"></i>
                 <h3>Completed</h3>
                 <label>10+ Projects</label>
@@ -170,6 +184,57 @@
             </div>
           </div>
        </section>
+
+       <!-- -------------- Services BOX ---------------- -->
+
+       <section class="section" id="Services">
+       <div class="top-header">
+        <h1>Services</h1>
+       </div>
+       <div class="wrappers">
+        <div class="box">
+           <div class="front-face">
+              <div class="icon">
+                 <i class="fas fa-code"></i>
+              </div>
+              <span>Web Design</span>
+           </div>
+           <div class="back-face">
+              <span>Web Design</span>
+              <p>
+                Talented web designer with a flair for creating visually stunning and user-friendly websites, blending creativity with functionality to deliver captivating digital experiences.  </p>
+           </div>
+        </div>
+        <div class="box">
+           <div class="front-face">
+              <div class="icon">
+                 <i class="fas fa-chart-line"></i>
+              </div>
+              <span>Web Development</span>
+           </div>
+           <div class="back-face">
+              <span>web Developer</span>
+              <p>
+                Experienced web developer proficient in front-end and back-end technologies, creating dynamic and responsive websites that meet client objectives with precision and efficiency.  </p>
+           </div>
+        </div>
+        <div class="box">
+           <div class="front-face">
+              <div class="icon">
+                 <i class="fas fa-rocket"></i>
+              </div>
+              <span>App developer</span>
+           </div>
+           <div class="back-face">
+              <span>Game Design</span>
+              <p>
+                Empower your ideas with our streamlined app development platform, delivering user-friendly interfaces and seamless functionality, tailored to your vision.   </p>
+           </div>
+        </div>
+     </div>
+    </section>
+
+
 
        <!-- -------------- CONTACT BOX ---------------- -->
 
@@ -248,7 +313,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- ----- MAIN JS ----- -->
-    <script src="assets/js/main.js"></script>
+    <script src="main.js"></script>
     <script>
         /* ----- NAVIGATION BAR FUNCTION ----- */
     function myMenuFunction(){
@@ -309,7 +374,7 @@
   sr.reveal('.social_icons',{delay: 200})
   sr.reveal('.featured-image',{delay: 300})
   
-
+     
   /* -- PROJECT BOX -- */
   sr.reveal('.project-box',{interval: 200})
 
@@ -368,5 +433,6 @@
 
   window.addEventListener('scroll', scrollActive)
     </script>
+    
 </body>
 </html>
